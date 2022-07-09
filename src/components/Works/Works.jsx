@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Upwork from "../../img/htmlCssJavaS.png";
+import Fiverr from "../../img/react2.png";
+import Amazon from "../../img/gitGithub.png";
+import Shopify from "../../img/nodejs2.png";
+import Facebook from "../../img/java2.svg";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -21,18 +21,22 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Acquired
           </span>
-          <span>Brands & Clients</span>
+          <span>Skills</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+            <h1 style={{ color: darkMode ? "white" : "" }}>SOFT SKILLS</h1>
+           <ul>
+            <li>Public Speaker</li>
+            <li>Team Builder</li>
+            <li>Punctual</li>
+            <li>Creative</li>
+            <li>Soft Spoken</li>
+            <li>Active Listener</li>
+            <li>Efficient Learner</li>
+            
+
+            </ul>
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -71,8 +75,13 @@ const Works = () => {
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle"></div>
-      </div>
+        <div className="w-backCircle greenCircle"></div>
+        </div>
+       <div className="w-last">
+        <div className="w-hard hard2">HARD</div>
+        <div className="w-hard hard1" style={{ color: darkMode ? "white" : "" }}>SKILLS</div>
+
+        </div>
     </div>
   );
 };

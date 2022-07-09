@@ -1,6 +1,6 @@
 .Intro {
   display: flex;
-  height: 77vh;
+  height: 50vh;
   margin-top: 6rem;
 }
 
@@ -23,13 +23,13 @@
   font-size: 3rem;
 }
 .i-name > :nth-child(2) {
-  color: var(--orange);
+  color: var(--green);
   font-weight: bold;
   font-size: 3rem;
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -52,12 +52,40 @@
 .i-right {
   flex: 1;
   position: relative;
+
 }
-.i-right > * {
+/* .i-right > * {
   position: absolute;
   z-index: 1;
+} */
+/* .rightOut{
+  background-color: #00ef29;
+  position: absolute;
+  width:600px;
+
+} */
+.rightImg{
+  margin-left:150px;
+  margin-top: -70px;
+ 
+  
+ 
 }
-.i-right > :nth-child(1) {
+.rightImg img{
+  width:250px;
+  height: 350px;
+  /* border-radius: 20%; */
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  
+  border-bottom-right-radius: 20%;
+  position: absolute;
+  border-style:groove;
+  box-shadow: 4px 10px 10px 3px #85ff80;
+  border-color: #00ef29;
+  border-width: 3px;
+}
+/* .i-right > :nth-child(1) {
   transform: scale(0.69);
   left: -15%;
   top: -9%;
@@ -70,7 +98,7 @@
 .i-right > :nth-child(3) {
   transform: scale(1.4);
   left: 28%;
-}
+} */
 .i-right > :nth-child(4) {
   transform: scale(0.62);
   top: -19%;
@@ -106,6 +134,9 @@
   }
   .i-right .blur {
     display: none;
+  }
+  .rightImg{
+    margin-top: -470px;
   }
   .floating-div:nth-of-type(1){
     /* display: none; */

@@ -2,10 +2,13 @@
   padding: 0 3rem 0 3rem;
   display: flex;
   height: 90vh;
-  margin-top: 4rem;
-
+  margin-top: -3rem;
+  margin-bottom: 4rem;
   /* scroll */
   align-items: center;
+}
+.w-left{
+  margin-top: 5rem;
 }
 /* left side */
 .awesome {
@@ -16,11 +19,12 @@
 
 .awesome > :nth-child(1) {
   color: var(--black);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
+  margin-top: 2.4rem;
 }
 .awesome > :nth-child(2) {
-  color: var(--orange);
+  color: var(--green);
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -28,18 +32,52 @@
   color: var(--gray);
   font-size: 14px;
   margin-top: 1rem;
+
+}
+h1{
+  color:#1949b8;
+  font-size: 1.2rem;
+  font-weight:bold;
+  margin-left: 1.1rem;
+}
+li{
+  padding: 3px;
 }
 .s-button {
-  width: 8rem;
+  width: 7rem;
   height: 2rem;
-  margin-top: 4rem;
+  margin-top: -7px;
+  margin-left: 1.2rem;
 }
 
 /* right side */
 .w-right {
   position: relative;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  width:200px;
 }
-
+.w-last{
+  position: relative;
+  margin-left: 25rem;
+  margin-top: 5rem;
+  color:#1949b8;
+  
+  
+}
+.w-hard{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 1.2rem;
+  font-weight:bold;
+}
+.hard2{
+  color:#00ef29;
+}
+.hard1{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
 .w-mainCircle {
   left: 9rem;
   position: relative;
@@ -58,6 +96,22 @@
 .w-mainCircle > :nth-child(1) {
   top: -3rem;
   left: 6rem;
+  
+}
+.w-mainCircle > :nth-child(1) img{
+  width:150px;
+}
+.w-mainCircle > :nth-child(2) img{
+  width:310%;
+}
+.w-mainCircle > :nth-child(3) img{
+  width:190px;
+}
+.w-mainCircle > :nth-child(5) img{
+  width:120px;
+}
+.w-mainCircle > :nth-child(4) img{
+  width:240px;
 }
 .w-mainCircle > :nth-child(2) {
   left: -3rem;
@@ -106,8 +160,8 @@
   left: 18rem;
   top: 0rem;
 }
-.yellowCircle {
-  background: #f5c32c;
+.greenCircle {
+  background: #00ef29;
   left: 18rem;
   top: 8rem;
 }
@@ -118,6 +172,7 @@
     height: 55rem;
     padding: 0;
     gap: 5rem;
+    margin-top: -7rem;
   }
 
   .w-right {
@@ -125,12 +180,27 @@
     align-items: flex-start;
     justify-content:start;
     transform: scale(0.7);
+    position: relative;
+    margin-left: -5rem;
+
   }
   .w-mainCircle{
     position: static;
+    width: 0rem;
   }
   .w-backCircle{
     left: 8rem!important;
+    width: 0rem;
   }
+  .w-last{
+   
+    margin-left: -8rem;
+    margin-top: -5rem;
+     }
 
+     .w-hard{
+      writing-mode:horizontal-tb;
+      text-orientation: upright;
+     
+    }
 }

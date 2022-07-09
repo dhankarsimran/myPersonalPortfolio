@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import EnactusBird from "../../img/enactusBird.png";
+import Developer from "../../img/female-developer.webp";
+import Mlsa from "../../img/mlsa.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
@@ -24,13 +24,31 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+        <span style={{ color: darkMode ? "white" : "" }}>About</span>
+        <span>Me</span>
+        <span style={{fontSize: "16px"}}>
+          Typically, from a non-technical background, suddenly getting 
           <br />
-          ispum is simpley dummy text of printing
-        </spane>
+          into CSE was somewhere unnatural, but the way
+          <br />
+           computer & coding fascinates me towards itself,
+          <br />
+          is what makes me more passionate to go deep inside it...
+          <br />
+          <br/>
+          I'm currently a Front-end Web Developer and still learning 
+          <br/>
+          new technologies so that to be updated with the 
+          <br/>
+          growing technical world.
+          <br/>
+          <br/>
+          I'm also a Microsoft Learn Student Ambassador apart from 
+          <br/>
+          being a Vice President of ENACTUS ADGITM and trying to 
+          <br/>
+          contribute for the betterment of the society in any way.
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
@@ -41,38 +59,38 @@ const Services = () => {
         {/* first card */}
         <motion.div
           initial={{ left: "25rem" }}
-          whileInView={{ left: "14rem" }}
+          whileInView={{ left: "18rem" }}
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            emoji={EnactusBird}
+            heading={"ENACTUS-Adgitm Vice President"}
+            detail={"Entreprenuership, Leadership, Team BuildUp, Community Help"}
           />
         </motion.div>
         {/* second card */}
         <motion.div
           initial={{ left: "-11rem", top: "12rem" }}
-          whileInView={{ left: "-4rem" }}
+          whileInView={{ left: "2rem" }}
           transition={transition}
         >
           <Card
-            emoji={Glasses}
+            emoji={Developer}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            detail={"Html, Css, JavaScript, React, Nodejs, Java"}
           />
         </motion.div>
         {/* 3rd */}
         <motion.div
           initial={{ top: "19rem", left: "25rem" }}
-          whileInView={{ left: "12rem" }}
+          whileInView={{ left: "18rem" }}
           transition={transition}
         >
           <Card
-            emoji={Humble}
-            heading={"UI/UX"}
+            emoji={Mlsa}
+            heading={"MLSA-Beta Milestone"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Problem Solver, Digital Community BuildUp, Connect With World"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

@@ -1,6 +1,6 @@
 .t-wrapper{
     padding:  0 3rem 0 3rem;;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +15,12 @@
 .t-heading>*{
     font-size: 2rem;
     font-weight: bold;
+    margin-left: 12rem;
 }
 .t-heading span:nth-of-type(2){
-    color: var(--orange);
+    color: var(--green);
+    margin-left: 0.07rem;
+    font-size: 2rem;
 }
 
 .t-blur1{
@@ -34,21 +37,16 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
-    width: 30rem;
+    width: 28rem;
     height: 12rem;
     /* styles same as work.css */
     background: rgba(255, 255, 255, 0.26);
-    border: 7px solid var(--blueCard);
-    box-shadow: var(--boxShadow);
+    border: 10px solid var(--blueCard);
     border-radius: 20px;
 }
 .testimonial>img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
-}
-.testimonial>span{
-    color: var(--gray);
+    width: 32rem;
+    height: 16rem;
 }
 
 
@@ -63,17 +61,36 @@
     align-items: center;
     justify-content: center;
 }
+.t-wrapper .swiper-pagination-bullet{
+    background: lightgreen;
 
-.t-wrapper .swiper-pagination-bullet-active{
-    background: var(--orange);
 }
-
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--green);
+}
+.swiper-pagination{
+    margin-bottom: -4px;
+}
 @media screen and (max-width: 480px){
     .t-wrapper{
         padding: 0;
+        margin-top: 3rem;
+    }
+
+    .testimonial{
+        margin-top: -5rem;
     }
     .testimonial>img{
-        width: 70px;
-        height: 70px;
+        width: 123%;
+        height: 134%;
+    }
+    .t-heading span:nth-of-type(1){
+        margin-left: 110px;
+    }
+    .t-heading span:nth-of-type(2){
+        margin-left: 110px;
+    }
+    .swiper-pagination{
+        margin-bottom:10vw ;
     }
   }
