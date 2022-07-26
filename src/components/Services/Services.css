@@ -92,6 +92,7 @@
   }
   .cards > :nth-child(3) img{
     margin-top: -20px;
+    margin-bottom: -3rem;
     width:120%;
   }
 }
