@@ -63,23 +63,47 @@
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
-  }
 
-   .n-list li {
-    
-    position: absolute;
-    background-color: #151719;
-    right: 60%;
+  }
+ .n-list ul {
+    /* position: absolute; */
+    /* background-color: var(--green);
+    color:white;
+   
+    right: 0;
     left: 0;
     text-align: center;
-    padding: 16px 0px;
+    padding: 16px 0px; */
+    gap:0.4rem;
+    margin-left: -18.2rem;
+    margin-top: 160px;
+    /* margin-left: -280px; */
+    /* display:block; */
+    padding-right: 100px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    
+    height:100%;
+    width:50vw;
+    line-height: 65px;
+    font-size:20px;
+    padding-left:40px;
+    box-sizing:border-box;
 }
-  input[type=checkbox]:checked~.n-list {
+
+  input[type=checkbox]:checked ~.n-list{
     display: block;
+  
 }
 
 .hamburger {
-    display: block;
+    display:block;
+    
+}
+.n-button{
+  margin-left: 2rem;
+}
+.n-left{
+  margin-right: 130px;
 }
 }
 

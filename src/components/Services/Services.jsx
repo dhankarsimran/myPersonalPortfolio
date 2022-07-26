@@ -6,7 +6,7 @@ import Developer from "../../img/female-developer.webp";
 import Mlsa from "../../img/mlsa.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from './Simran-Dhankar-Resume.pdf';
 
 const Services = () => {
   // context
@@ -77,7 +77,7 @@ const Services = () => {
           <Card
             emoji={Developer}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Java"}
+            detail={"Html, Css, JavaScript, React, Redux-toolkit, Nodejs, Java"}
           />
         </motion.div>
         {/* 3rd */}

@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import NetflixClone from "../../img/NetflixClone.png";
-import SurvayForm from "../../img/SurvayForm.png";
+import TravelApp from "../../img/TravelApp.png";
+import Portfolio2 from "../../img/portfolio.png"
 import LinkedInClone from "../../img/LinkedInClone.png";
 import NewsApp from "../../img/NewsApp.png";
 import { themeContext } from "../../Context";
@@ -24,16 +24,16 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={NetflixClone} alt="" />
+        <a href="https://github.com/dhankarsimran/TravelAdvisorApp"><img src={TravelApp} alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={NewsApp} alt="" />
+          <a href="https://github.com/dhankarsimran/NewsApp"><img src={NewsApp} alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SurvayForm} alt="" />
+        <a href=""><img src={Portfolio2} alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={LinkedInClone} alt="" />
+          <a href="https://github.com/dhankarsimran/LinkedIn-Clone" ><img src={LinkedInClone} alt="" /></a>
         </SwiperSlide>
       </Swiper>
     </div>

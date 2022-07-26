@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import { themeContext } from "../../Context";
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -12,21 +13,24 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
-        form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "service_y3q97pb",
+        "template_70bkiif",
+        // form.current,
+        e.target,
+        "2FU5d7Z-NOT97K46S"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           setDone(true);
-          form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+          e.target.reset();
+        }).catch(err=>console.log(err))
+        ;
+        // },
+        // (error) => {
+        //   console.log(error.text);
+        // }
+      
   };
 
   return (
