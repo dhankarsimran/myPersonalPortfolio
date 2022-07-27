@@ -82,18 +82,24 @@
     box-sizing:border-box;
 } */
 .ham-list{
-  margin-top: 25vh;
+  margin-top: 22vh;
   margin-left: -8rem;
   width:12vw
 }
 .ham-list ul{
+  width:29vw;
 line-height: 1.5rem;
-margin-left: -6.5rem;
+margin-left: -7rem;
 
+}
+.ham-list li{
+  border-bottom: solid 1px var(--green);
+  box-shadow: 0px 10px 24px 3px rgba(100, 255, 70, 0.42);
 }
 .ham-list > ul :hover {
   color: var(--green);
   cursor: pointer;
+  
 }
 .n-wrapper{
  margin-bottom: 10rem;
@@ -103,11 +109,11 @@ input[type=checkbox]:checked ~.ham-list{
 }
 
 input[type=checkbox]:checked ~.hamburger{
-  margin-right: 5.2rem;
+  margin-right: 5.5rem;
 }
 .hamburger {
     display:block;
-    margin-right: -0.56rem;
+    margin-right: -0.34rem;
     
   }
 input[type=checkbox]:checked ~.n-button{
