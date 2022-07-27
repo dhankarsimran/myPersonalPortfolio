@@ -88,7 +88,7 @@
 }
 .ham-list ul{
 line-height: 1.5rem;
-margin-left: -6rem;
+margin-left: -6.5rem;
 
 }
 .ham-list > ul :hover {
@@ -103,11 +103,11 @@ input[type=checkbox]:checked ~.ham-list{
 }
 
 input[type=checkbox]:checked ~.hamburger{
-  margin-right: 5rem;
+  margin-right: 5.2rem;
 }
 .hamburger {
     display:block;
-    margin-right: -0.74rem;
+    margin-right: -0.56rem;
     
   }
 input[type=checkbox]:checked ~.n-button{
