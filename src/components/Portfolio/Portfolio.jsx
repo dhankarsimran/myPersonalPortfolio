@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
+import ExpenseTracker from "../../img/expenseTracker.png";
 import TravelApp from "../../img/TravelApp.png";
 import Portfolio2 from "../../img/portfolio.png"
 import LinkedInClone from "../../img/LinkedInClone.png";
@@ -13,7 +14,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -24,13 +25,16 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-        <a href="https://github.com/dhankarsimran/TravelAdvisorApp"><img src={TravelApp} alt="" /></a>
+          <a href="https://expensetrackerforyou.netlify.app"><img src={ExpenseTracker} alt="" /></a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://github.com/dhankarsimran/TravelAdvisorApp"><img src={TravelApp} alt="" /></a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://simrandhankar.netlify.app"><img src={Portfolio2} alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://github.com/dhankarsimran/NewsApp"><img src={NewsApp} alt="" /></a>
-        </SwiperSlide>
-        <SwiperSlide>
-        <a href=""><img src={Portfolio2} alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://github.com/dhankarsimran/LinkedIn-Clone" ><img src={LinkedInClone} alt="" /></a>
