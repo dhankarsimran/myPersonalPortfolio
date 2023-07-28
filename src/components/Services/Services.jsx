@@ -26,28 +26,31 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>About</span>
         <span>Me</span>
-        <span style={{fontSize: "16px"}}>
-          Typically, from a non-technical background, suddenly getting 
+        <span style={{fontSize: "17px" ,wordWrap:"break-word"}}>
+          I am a multifaceted individual with a strong commitment to social impact,
           <br />
-          into CSE was somewhere unnatural, but the way
-          <br />
-           computer & coding fascinates me towards itself,
-          <br />
-          is what makes me more passionate to go deep inside it...
+           technology advocacy, open-source contributions, and athletic excellence.
           <br />
           <br/>
-          I'm currently a Front-end Web Developer and still learning 
+          I had the privilege of being selected as a contributor in GirlScript
           <br/>
-          new technologies so that to be updated with the 
+          Summer of Code where I actively contributed to open-source projects, 
           <br/>
-          growing technical world.
+          further enhancing my technical skills and knowledge. 
           <br/>
           <br/>
-          I'm also a Microsoft Learn Student Ambassador apart from 
+          I am honored to serve as a Microsoft Learn Student Ambassador,
           <br/>
-          being a Vice President of ENACTUS ADGITM and trying to 
+          where I conducted webinars to share my expertise in GitHub, VS Code,
+           <br/>
+          and  other  relevant topics with my peers. 
           <br/>
-          contribute for the betterment of the society in any way.
+          <br/>
+          As the Vice President of Enactus ADGITM, a non-profit organization,
+          <br/>
+          I led a team in executing real-life projects that aimed to generate income
+          <br/>
+          for underprivileged individuals, making a positive impact on their lives.
         </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -77,7 +80,7 @@ const Services = () => {
           <Card
             emoji={Developer}
             heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Redux-toolkit, Nodejs, Java"}
+            detail={"MERN, NextJs, Redux, Redux-Toolkit, Java (DSA), JavaScript, HTML, CSS, TailwindJS"}
           />
         </motion.div>
         {/* 3rd */}

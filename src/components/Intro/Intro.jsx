@@ -28,7 +28,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Simran Dhankar</span>
           <span>
-            Frontend Developer with high goals and keen interest in learning new things, producing the best of what I have.
+          Combining code and creativity, fearlessly crafts digital wonders, a full-stack developer with a passionate mind.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>

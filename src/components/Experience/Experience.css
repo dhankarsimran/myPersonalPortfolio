@@ -84,4 +84,10 @@ margin-right: -2rem;
     .top2 > :nth-child(3){
         margin-left: -2rem;
             }
+            .top1{
+                margin-top: 17rem;
+                    }
+                    .top2{
+                        margin-top: -2rem;
+                    }
 }

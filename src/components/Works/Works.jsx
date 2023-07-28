@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/htmlCssJavaS.png";
-import Fiverr from "../../img/react2.png";
-import Amazon from "../../img/gitGithub.png";
-import Shopify from "../../img/nodejs2.png";
-import Facebook from "../../img/java2.svg";
+import JS from "../../img/htmlCssJavaS.png";
+import Git from "../../img/gitGithub.png";
+import Mern from "../../img/Mern.png";
+import Java from "../../img/java2.svg";
+import DSA from "../../img/DSA.png"
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -27,13 +27,16 @@ const Works = () => {
           <spane>
             <h1 style={{ color: darkMode ? "white" : "" }}>SOFT SKILLS</h1>
            <ul>
-            <li>Public Speaker</li>
-            <li>Team Builder</li>
-            <li>Punctual</li>
-            <li>Creative</li>
-            <li>Soft Spoken</li>
-            <li>Active Listener</li>
-            <li>Efficient Learner</li>
+            <li>Problem-solving</li>
+            <li>Teamwork</li>
+            <li>Public Speaking</li>
+            <li>Leadership</li>
+            <li>Punctuality</li>
+            <li>Creativity</li>
+            <li>Decision-making</li>
+            <li>Active Listening</li>
+            <li>Critical thinking</li>
+            <li>Adaptability</li>
             
 
             </ul>
@@ -58,19 +61,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={JS} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Mern} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Git} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={DSA} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Java} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}
