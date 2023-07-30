@@ -6,7 +6,7 @@ import Developer from "../../img/female-developer.webp";
 import Mlsa from "../../img/mlsa.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './SimranDhankar.pdf';
+import Resume from './Simran-Dhankar-Resume.pdf';
 
 const Services = () => {
   // context
